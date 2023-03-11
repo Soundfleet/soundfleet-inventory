@@ -14,7 +14,7 @@ create soundfleet user:
     - system: True
   user.present:
     - name: soundfleet
-    - password: '{{ pillar.user_password }}'
+    - password: '{{ pillar.user_password }}'   # received from deploy command
     - shell: /bin/bash
     - enforce_password: True
 

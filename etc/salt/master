@@ -844,9 +844,9 @@ pillar_roots:
 #   - cmd_json:
 #     - cat /srv/ext_pillar/receivers/%s.json
 
-# ext_pillar:
-#   - http_json:
-#     - https://app.soundfleet.io/api/pillar/%s/
+ext_pillar:
+  - http_json:
+    - soundfleet_url/api/devices/%s/pillar/
 
 # A list of paths to be recursively decrypted during pillar compilation.
 # Entries in this list can be formatted either as a simple string, or as a

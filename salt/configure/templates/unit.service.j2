@@ -1,0 +1,10 @@
+[Unit]
+Description=DIMS {{ unit }} service
+
+[Service]
+ExecStart={{ venv_dir }}/bin/{{ unit }}d
+Restart=always
+RestartSec=180
+
+[Install]
+WantedBy=default.target
