@@ -840,9 +840,9 @@ pillar_roots:
   base:
     - /srv/pillar
 
-ext_pillar:
-  - cmd_json:
-    - cat /srv/ext_pillar/receivers/%s.json
+# ext_pillar:
+#   - cmd_json:
+#     - cat /srv/ext_pillar/receivers/%s.json
 
 # ext_pillar:
 #   - http_json:
