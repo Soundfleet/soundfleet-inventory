@@ -20,7 +20,7 @@ setup_virtualenv:
 install_player:
   pip.installed:
     - bin_env: {{ pillar.virtualenv }}/bin/pip
-    - editable: {{ pillar.repository_url }}#egg=soundfleet
+    - editable: {{ pillar.repository_url }}#egg=soundfleet_player
     - exists_action: w
     - require:
       - pkg: install_packages
