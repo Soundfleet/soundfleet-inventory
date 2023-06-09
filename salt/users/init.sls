@@ -10,9 +10,6 @@ delete default RPI group:
 
 
 create soundfleet user:
-  group.present:
-    - name: soundfleet
-    - system: True
   user.present:
     - name: soundfleet
     - password: '{{ pillar.user_password }}'   # received from deploy command
